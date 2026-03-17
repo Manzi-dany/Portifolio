@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Manzi Dany",
-  tagline: "Biotechnologist | Data Scientist | Public Health Innovator",
+  tagline: "Biotechnologist | Data Scientist | Digital Health Innovator",
   email: "manzidany72@gmail.com",
   github: "https://github.com/Manzi-dany",
   linkedin: "https://www.linkedin.com/in/manzi-dany-b2842030b",
@@ -8,11 +8,18 @@ export const personalInfo = {
 };
 
 export const aboutContent = {
-  summary: `I am a passionate biotechnologist and certified data analyst with a mission to leverage data-driven insights for improving public health outcomes and advancing biotechnology innovation in Rwanda and beyond.
+  summary: `I build data-driven solutions that improve healthcare systems and advance biotechnology through analytics, machine learning, and intelligent systems.
 
-With a strong foundation in both laboratory biotechnology and modern data science techniques, I bridge the gap between scientific research and actionable analytics. My work focuses on transforming complex health and biological data into meaningful insights that drive decision-making.
+With a background in biotechnology and growing expertise in data science, I focus on transforming real-world data into insights that support better decisions in healthcare, research, and sustainability.
 
-As an entrepreneur, I founded ScieAfrica to promote science communication and Rwanda History Archives to preserve our cultural heritage through digital innovation.`,
+I analyze healthcare and public health data, build data pipelines and backend systems, develop machine learning models for prediction and insights, and support digital health and AI-driven solutions.`,
+  whatIDo: [
+    "Analyze healthcare and public health data",
+    "Build data pipelines and backend systems",
+    "Develop machine learning models for prediction and insights",
+    "Support digital health and AI-driven solutions",
+  ],
+  tools: ["Python", "SQL", "PostgreSQL", "Django", "Power BI", "Tableau", "Machine Learning"],
   education: [
     {
       degree: "BSc in Biotechnology",

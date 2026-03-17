@@ -70,9 +70,8 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-slate-500 text-lg mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Creating data-driven solutions for public health challenges and
-              biotechnology innovation. Passionate about leveraging analytics to
-              improve healthcare outcomes in Rwanda and beyond.
+              I build data-driven solutions that improve healthcare systems and advance 
+              biotechnology through analytics, machine learning, and intelligent systems.
             </motion.p>
 
             <motion.div

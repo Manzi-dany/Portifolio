@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Award, Target, Lightbulb } from "lucide-react";
+import { GraduationCap, Award, Target, Lightbulb, CheckCircle, Wrench } from "lucide-react";
 import { aboutContent } from "@/data/content";
 
 export default function About() {
@@ -52,6 +52,63 @@ export default function About() {
             </div>
           </div>
         </motion.div>
+
+        {/* What I Do & Tools Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {/* What I Do */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-emerald-50 rounded-2xl p-8 h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+                  <CheckCircle className="h-6 w-6 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900">What I Do</h3>
+              </div>
+              <div className="space-y-4">
+                {aboutContent.whatIDo?.map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-xs">✓</span>
+                    </div>
+                    <p className="text-slate-700">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Tools & Technologies */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-blue-50 rounded-2xl p-8 h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center">
+                  <Wrench className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900">Tools & Technologies</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {aboutContent.tools?.map((tool, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-white rounded-lg text-slate-700 font-medium shadow-sm"
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
 
         {/* Education & Certifications Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
