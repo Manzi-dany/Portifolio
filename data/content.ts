@@ -17,18 +17,25 @@ As an entrepreneur, I founded ScieAfrica to promote science communication and Rw
     {
       degree: "BSc in Biotechnology",
       institution: "University of Rwanda",
-      year: "2024",
+      year: "October 2025",
       description: "Comprehensive training in molecular biology, genetics, microbiology, and bioprocessing techniques.",
     },
     {
       degree: "Certified Data Analyst",
       institution: "ALX Africa",
-      year: "2024",
+      year: "December 2025",
       description: "Professional certification in data analysis, visualization, and business intelligence.",
+    },
+    {
+      degree: "Python & Django Certification",
+      institution: "Solvit Africa",
+      year: "September 2025",
+      description: "Professional certification in Python programming and Django web framework development.",
     },
   ],
   certifications: [
     "Data Analyst Professional - ALX Africa",
+    "Python & Django Developer - Solvit Africa",
     "Junior Data Scientist - Self-taught with project-based learning",
     "Biotechnology Laboratory Techniques",
   ],
